@@ -15,10 +15,12 @@ const Header = Styled.div`
     }
 `;
 
+const userName = prompt(`Пожалуйста, введите ваше имя?`)
+
 const AppHeader = ({liked, allPosts}) => {
     return (
         <Header>
-            <h1>Abdulaziz Abduvakhobov</h1>
+            <h1>{userName}</h1>
             <h2>{allPosts} записей, из них понравилось {liked}</h2>
         </Header>
     )
